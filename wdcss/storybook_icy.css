@@ -1,0 +1,277 @@
+/* assets */
+
+@import "https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap";
+
+:root {
+    
+    --c1:#6faff6;
+    --c2:#CFDBED;
+    --c3:#131d32;
+    
+    --g1:#73B6FA;
+    --g2:#598AC9;
+    --g3:#4D74B3;
+    --g4:#3D5C99;
+    
+}
+
+#main, .breadcrumb, .nav-tabs .nav-link {
+    background: url(https://raw.githubusercontent.com/muucephei/muucephei.github.io/main/wdcss/assets/storybook_crossword_texture.png) fixed!important;
+} body, .nav-tabs, table.table th, .col-12 .alert {
+    background:url(https://raw.githubusercontent.com/muucephei/muucephei.github.io/main/wdcss/assets/storybook_icy_bg.jpg) fixed!important;
+    background-size:cover!important;
+}
+
+/* functional */
+
+.navbar-status, .breadcrumb-nav, #sidebar {
+    background:transparent!important;
+} 
+
+body {
+    font-family:Garamond, Book Antiqua!important;
+} .navbar-main, #sidebar h3, #sidebar h4, h1, h2, table.table th, .col-12 .alert, .btn {
+    font-family:Jost!important;
+} .navbar-main .nav-link, #sidebar h3, #sidebar h4, h1, h2, table.table th, table.table th a, .col-12 .alert, .btn {
+    font-weight:300!important;
+} table.border-none table.striped .b, .featured-wolf b, .left.b, .subheader, .bottom {
+	font-variant:small-caps!important;
+}
+
+.navbar-main {
+	border-radius:0 0 5px 5px;
+} .navbar-main .nav-link:hover, .navbar-status a:hover {
+	color:white!important;
+} .navbar-status a:hover {
+    text-decoration:underline!important;
+}
+
+#main, .breadcrumb {
+    border:1px solid rgba(0, 0, 0, .75);
+    text-shadow:0px 1px rgba(0, 0, 0, .1);
+} #main {
+	border-top:none;
+	border-radius:0 0 5px 5px;
+} .breadcrumb {
+	border-bottom:none;
+	border-radius:5px 5px 0 0;
+} .breadcrumb::after {
+	content:'CSS by #202';
+	position:absolute;
+	right:35px;
+    font-style:italic;
+} .breadcrumb .fa-bookmark {
+    color: var(--c1)!important;
+}
+
+.navbar-main, #footer {
+    box-shadow:0px 0px 5px rgba(0, 0, 0, .4)!important;
+}
+
+#sidebar {
+	padding-right:0;
+	padding-left:0;
+} #sidebar .card {
+	border-radius:5px 0 0 5px;
+	border:none;
+    box-shadow:-3px 3px 5px rgba(0, 0, 0, .2);
+} #sidebar h3::before {
+	content:'\25B6  ';
+	font-size:10px;
+} #sidebar h3::after {
+	content:' \25C0 ';
+	font-size:10px;
+} @media only screen and (max-width: 600px) {
+	#main, .navbar-main, .breadcrumb, #footer, #sidebar .card {
+		border-radius:0!important
+	} #sidebar {
+		padding-left:15px;
+		padding-right:15px;
+    } #sidebar .card, .navbar-main, #footer {
+        box-shadow:none!important;
+    }
+} 
+
+#sidebar a, .navbar-main .fa {
+	color: var(--c1)!important;
+} #sidebar .card, .navbar-main .nav-link {
+	color: var(--c2)!important;
+} .navbar-main, .col-6 .card.text-center, #sidebar .card, #footer {
+	background: var(--c3)!important;
+}
+
+#main h1 {
+	border-bottom:1px solid rgba(0, 0, 0, .75);
+	padding-bottom:5px;
+	font-size:35px;
+	text-align:center;
+} #main h1::before {
+	content:'◆';
+	position:absolute;
+	left:15px;
+} #main h1::after {
+	content:'◆';
+	position:absolute;
+	right:15px;
+} #main a, .breadcrumb a, .col-6 .card.text-center {
+	color: var(--c1);
+}
+
+.nav-tabs {
+	border-radius:5px;
+	border:none!important;
+	padding:10px;
+	padding-bottom: 0;
+} .nav-tabs .nav-link, .nav-tabs .nav-link.active {
+	border:none;
+	border-radius:5px 5px 0 0;
+	margin-right:10px;
+} .nav-tabs .nav-link:hover {
+    text-decoration: underline;
+}
+
+table.table {
+	border:none;
+} table.table th {
+	font-size:20px!important;
+	padding:7px 10px!important
+} table.table th, table.table .bottom {
+	border-radius:5px;
+}
+
+table.border-none .card.mb-3, .subheader {
+	background:transparent!important;
+	border-bottom:1px solid rgba(0, 0, 0, .75)!important;
+	border-radius:0;
+} table.border-none .card.mb-3 a img, .featured-wolf img, .table .form-row div img {
+	border-radius:5px;
+} table.border-none table.striped .b, .left.b {
+	text-align:right;
+} table.border-none table.striped .b {
+	border-right:1px solid rgba(0, 0, 0, .75);
+} table.border-none table.striped tr, .table .left {
+	background:transparent!important;
+} table.border-none .floatright {
+	float:none!important;
+} 
+
+table.table .bottom {
+	background:transparent;
+	border-top:1px dashed lightgray;
+} table.table-striped tbody tr {
+	background:transparent!important;
+	border-bottom:1px dashed lightgray;
+} table.table-striped tbody tr:nth-of-type(1), table.border-none tr {
+	border:none!important;
+}
+
+th a {
+	color: var(--c2)!important;
+}
+
+.col-6 .card.text-center {
+	border-radius:40px;
+	overflow:hidden;
+} .col-6 .card.text-center .card-header {
+	max-height:40px!important;
+	padding:10px;
+    border:none;
+} .col-6 .card.text-center img {
+	max-height:40px;
+	object-fit:cover;
+}
+
+table.table .progress {
+	background:transparent!important;
+	border-radius:0;
+	border-left:1px solid rgba(0, 0, 0, .75);
+	border-right:1px solid rgba(0, 0, 0, .75);
+} table.table .progress:nth-of-type(1) {
+	border-radius:7px 7px 0 0;
+	border-top:1px solid rgba(0, 0, 0, .75);
+} table.table .progress:nth-of-type(4) {
+	border-radius:0 0 7px 7px;
+	border-bottom:1px solid rgba(0, 0, 0, .75);
+} table.table .bg-warning, table.table .bg-success {
+    background: var(--g1)!important;
+} table.table .bg-primary {
+    background: var(--g2)!important;
+} table.table .bg-danger {
+    background: var(--g3)!important;
+} table.table .bg-info {
+    background: var(--g4)!important;
+}
+
+.card .progress {
+	background:transparent!important;
+	border-radius:5px;
+    border:1px solid var(--c1);
+} .card .progress-bar {
+    background: var(--c1)!important;
+} .row.mt-3 .card, .card.mb-3 {
+	background:transparent!important;
+}
+
+div.float-right.mt-2 {
+	margin-right:35px;
+} div.float-right.mt-2 .btn {
+    background:transparent!important;
+    border:none!important;
+    color:black!important;
+    padding:0px!important;padding-top:3px!important;
+} div.float-right.mt-2 .btn:focus {
+    background:transparent;
+    border:none!important; box-shadow:none!important;
+    color:black;
+}
+
+.alert {
+    background:rgba(255, 255, 255, .5);
+    border:1px solid rgba(0, 0, 0, .1);
+}
+
+.col-12 .alert {
+	border:none;
+	border-radius:5px;
+	color:white!important;
+} .col-12 a:hover {
+    text-decoration:none!important;
+}
+
+.col-4 .card {
+    background:transparent!important;
+    border-bottom:1px dashed lightgray!important;
+    border-radius:0;
+} #summernote-form .left.b {
+    border-right:1px solid rgba(0, 0, 0, .75);
+}
+
+.btn {
+    background: var(--c3);
+    color: var(--c2);
+	border-bottom:none;
+	border-radius:4px;
+} .btn:hover {
+    background: var(--c3)!important;
+	color:white!important;
+}
+
+.navbar-status .btn {
+	background:none!important;
+}
+
+.w-50:first-child div {
+	border: 3px solid var(--c3)!important;
+	border-radius:5px!important;
+} .w-50:first-child a:first-child img {
+    border-radius: 5px;
+} .w-50:first-child div img {
+    border-radius:5px 0px!important;
+}
+
+#footer {
+	margin-top: 30px;
+	border-radius: 5px 5px 0 0;
+} #footer a:hover {
+    color: var(--c2)!important;
+}
